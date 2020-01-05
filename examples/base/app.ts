@@ -1,4 +1,5 @@
-import axios from '../../src/index'
+import axios from "../../src"
+
 
 
 const paramsString = 'q=URLUtils.searchParams&topic=api'

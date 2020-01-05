@@ -12,7 +12,7 @@ export function transformResponse(data: any): any {
       data = JSON.parse(data)
     }
     catch{
-
+      // nothing to do
     }
   }
   return data
