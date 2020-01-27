@@ -50,7 +50,7 @@ const instance = axios.create({
 
 instance({
   url: '/config/post',
-  method: 'post',
+  method: 'get',
   data: {
     a: 1
   }

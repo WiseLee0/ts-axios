@@ -47,7 +47,7 @@ registerConfigRouter()
 
 app.use(router)
 
-const port = process.env.PORT || 8080
+const port = process.env.PORT || 8001
 module.exports = app.listen(port, () => {
   console.log(`Server listening on http://localhost:${port}, Ctrl+C to stop`)
 })
@@ -156,5 +156,8 @@ function registerInterceptorRouter () {
 function registerConfigRouter () {
   router.post('/config/post', function (req, res) {
     res.json(req.body)
+  })
+  router.get('/config/post', function (req, res) {
+    res.json(req.query)
   })
 }
